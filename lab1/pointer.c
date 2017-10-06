@@ -1,7 +1,8 @@
 /*
  * CSE 351 Lab 1 (Data Lab - Pointers)
  *
- * <Please put your name and userid here>
+ * Nikhil Grover
+ * 1435083
  *
  * pointer.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
@@ -102,9 +103,13 @@ int intSize() {
   int intArray[10];
   int * intPtr1;
   int * intPtr2;
-  // Write code to compute size of an integer.
-
-  return 2;
+  // Set the pointers to the 0th and 1st indexes of the
+  // array, respectively. Return the difference of the two
+  // addresses to find the int size.
+  
+  intPtr1 = intArray;
+  intPtr2 = intPtr1 + 1;
+  return (char*) intPtr2 - (char*)intPtr1;
 }
 
 /*
@@ -114,9 +119,12 @@ int doubleSize() {
   double doubArray[10];
   double * doubPtr1;
   double * doubPtr2;
-  // Write code to compute size of a double.
+  // Similar to arraySize, set the address to adjacent
+  // indices array, and take the address difference.
 
-  return 2;
+  doubPtr1 = doubArray;
+  doubPtr2 = doubPtr1 + 1;
+  return (char*)doubPtr2 - (char*)doubPtr1;
 }
 
 /*
@@ -126,9 +134,11 @@ int pointerSize() {
   double * ptrArray[10];
   double ** ptrPtr1;
   double ** ptrPtr2;
-  // Write code to compute size of a pointer.
+  // Same concept as the previous two, only with pointer array
 
-  return 2;
+  ptrPtr1 = ptrArray;
+  ptrPtr2 = ptrPtr1 + 1;
+  return (char*)ptrPtr2 - (char*)ptrPtr1;
 }
 
 /*
@@ -146,6 +156,17 @@ int changeValue() {
   // Remember not to use constants greater than 255.
   // Remember to use * to dereference.
 
+  // Use shifts to set an int 'x' to 351,
+  // then  set another ptr to 5 indices
+  // beyond intPtr1, which will set the 
+  // 5th index to 351.
+
+  int x = 0x1;
+  x = x << 8;
+  x = x + 0x5F;
+  intPtr2 = intPtr1 + 5;
+  *intPtr2 = value;
+
   return intArray[5];
 }
 
@@ -155,7 +176,19 @@ int changeValue() {
  * Operators / and % and loops are NOT allowed.
  */
 int withinSameBlock(int *ptr1, int *ptr2) {
-  return 2;
+  // Mask out the last 6 bits and compare them,
+  // because that should be th eonly thing
+  // determing whether or not both addresses are 
+  // in the same block.
+  int x1 = (char*) &(*ptr1);
+  int x2 = (char*) &(*ptr2);
+  int mask = 0xFF;
+  mask = (mask << 8) + 0xFF;
+  mask = (mask << 8) + 0xFF;
+  mask = (mask << 8) + 0XC0;
+  x1 = x1 & mask;
+  x2 = x2 & mask;
+  return x1 == x2;
 }
 
 /*
