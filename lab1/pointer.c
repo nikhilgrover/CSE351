@@ -199,5 +199,17 @@ int withinSameBlock(int *ptr1, int *ptr2) {
  * Operators / and % and loops are NOT allowed.
  */
 int withinArray(int * intArray, int size, int * ptr) {
-  return 2;
+  /*
+   * If the pointer, x,  is pointing to an element that is
+   * is indeed within the array, then the difference between
+   * the front of the array and x will be the same sign as 
+   * the difference between the end of the array and x. If
+   * this indeed the case, the sum of the sign bits will be zero.
+   */
+  int p1 = (char*) &(*intArray);
+  int p2 = p1 + 4 * (size - 1);
+  int p3 = (char*) &(*ptr);
+  int firstElementSign = ((p3 - p1) >> 31) & 1;
+  int secondElementSign = ((p2 - p3) >> 31) & 1;
+  return (firstElementSign + secondElementSign) == 0;
 }
