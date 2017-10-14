@@ -1,7 +1,7 @@
 /*
  * CSE 351 Lab 1 (Data Lab )
  *
- * <Please put your name and userid here>
+ * Nikhil Grover 1435083
  *
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
@@ -338,5 +338,15 @@ int conditional(int x, int y, int z) {
  *   Rating: 4
  */
 int isPower2(int x) {
-  return 2;
+  /*
+   * The first variable checks if x is a power
+   * of 2 by confirming that x and x-1 don't
+   * have 1s in the same place. The second checks
+   * for negative and zero values. Combining the 
+   * two tells that the value is definitely a 
+   * power of 2.
+   */
+  int pow2 = x & (x+(~1+1));
+  int sign = ((!(x >> 31)) & (~(!x)));
+  return (!pow2) & sign;
 }
