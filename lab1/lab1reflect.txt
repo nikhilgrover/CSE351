@@ -1,17 +1,19 @@
 ********************
 * Lab 1 Reflection *
 ********************
-Name: 
-ID:   
+Name: Nikhil Grover 
+ID: 1435083 
 
 
 -----------------------------------------------------------
-1) Answer in hex:  
+1) Answer in hex: 0x0A0 
 -----------------------------------------------------------
-2) Answer in decimal:  
+2) Answer in decimal: -352 
 -----------------------------------------------------------
-3) Explain:
-
-
-
+3) Explain: -1 when converted to hex is 64 bits of 1s, 
+whereas 0xFFFFFFFF is a 32-bit value. If the data type were
+to be int, there would be no difference, as they would be
+truncated to the same size, but that is not specified. So
+when being used in bitwise operations, -1 could behave 
+differently than 0xFFFFFFFF depending upon the top 32 bits.
 -----------------------------------------------------------
