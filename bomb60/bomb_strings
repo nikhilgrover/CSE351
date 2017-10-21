@@ -1,0 +1,332 @@
+    238 /lib64/ld-linux-x86-64.so.2
+    5d9 libc.so.6
+    5e3 socket
+    5ea cuserid
+    5f2 fflush
+    5f9 strcpy
+    600 exit
+    605 sprintf
+    60d fopen
+    613 __isoc99_sscanf
+    623 connect
+    62b signal
+    632 puts
+    637 stdin
+    63d rewind
+    644 strtol
+    64b fgets
+    651 tmpfile
+    659 stdout
+    660 fputc
+    666 fclose
+    66d __ctype_b_loc
+    67b getenv
+    682 system
+    689 gethostbyname
+    69b fwrite
+    6a2 bcopy
+    6a8 fprintf
+    6b0 sleep
+    6b6 __libc_start_main
+    6c8 __gmon_start__
+    6d7 GLIBC_2.3
+    6e1 GLIBC_2.7
+    6eb GLIBC_2.2.5
+    ac1 5B% 
+    ac7 %D% 
+    ad1 %B% 
+    ae1 %:% 
+    af1 %2% 
+    b01 %*% 
+    b11 %"% 
+    c61 %z$ 
+    c71 %r$ 
+    c81 %j$ 
+    c91 %b$ 
+    ca1 %Z$ 
+    ce5 UH- :`
+    d12 fffff.
+   109d AUATUSH
+   10b3 d$0A
+   113a t$(H
+   117c X[]A\A]
+   12a2 ATUSH
+   12cb t":E
+   1304 []A\
+   1309 ATUSH
+   13c9 []A\
+   1464 ATUSH
+   150d $nobof
+   1676 P[]A\
+   17c3 =k" 
+   189a []A\A]A^A_
+   18d0 %s: Error: Couldn't open %s
+   18ed Usage: %s [<input_file>]
+   1907 That's number 2.  Keep going!
+   1925 Halfway there!
+   1938 Welcome to my fiendish little bomb. You have 6 phases with
+   1978 which to blow yourself up. Have a nice day!
+   19a8 Phase 1 defused. How about the next one?
+   19d8 So you got that one.  Try this one.
+   1a00 Congratulations! You've (mostly) defused the bomb!
+   1a38 Hit Control-C to escape phase 6 (for free!), but if you want to
+   1a78 try phase 6 for extra credit, you can continue.  Just beware!
+   1ab8 Two plus two is ... ten. In base four! I'm fine!
+   1af0 Wow! You've defused the secret stage!
+   1ba0 So you think you can stop the bomb with ctrl-c, do you?
+   1bd8 nonexistenthost.cs.washington.edu
+   1c00 Curses, you've found the secret phase!
+   1c28 But finding it and solving it are quite different...
+   1c60 Congratulations! You've defused the bomb! Again!
+   1c98 Well...
+   1ca0 OK. :-)
+   1ca8 Invalid phase%s
+   1cb9 Bad host (1).
+   1cc7 Bad host (2).
+   1cd5 Bad host (3).
+   1ce3 defused
+   1ceb exploded
+   1cf4 ERROR: dup(0) error
+   1d08 ERROR: close error
+   1d1b ERROR: tmpfile error
+   1d30 Subject: Bomb notification
+   1d4c bomb-header:%s:%d:%s:%s:%d
+   1d68 bomb-string:%s:%d:%s:%d:%s
+   1d84 bomb
+   1d89 /usr/sbin/sendmail -bm
+   1da0 %s %s@%s
+   1da9 ERROR: notification error
+   1dc3 ERROR: fclose(tmp) error
+   1ddc ERROR: dup(tmpstdin) error
+   1df7 ERROR: close(tmpstdin)
+   1e0f BOOM!!!
+   1e17 The bomb has blown up.
+   1e2e %d %d %d %d %d %d
+   1e40 Error: Premature EOF on stdin
+   1e5e GRADE_BOMB
+   1e69 Error: Input line too long
+   1e84 %d %s
+   1e8a austinpowers
+   1e97 attu1.cs.washington.edu
+   1eaf attu2.cs.washington.edu
+   1ec7 attu3.cs.washington.edu
+   1edf attu4.cs.washington.edu
+   2047 ;*3$"
+   3380 uwcse351-17au-lab2
+   3a20 GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
+   3a4d GCC: (GNU) 5.3.1 20160406 (Red Hat 5.3.1-6)
+   4260 /opt/rh/devtoolset-4/root/usr/lib/gcc/x86_64-redhat-linux/5.3.1/include
+   42a8 /usr/include/bits
+   42ba /usr/include
+   42c8 bomb.c
+   42d2 stddef.h
+   42de types.h
+   42e9 stdio.h
+   42f4 libio.h
+   42ff stdlib.h
+   430b support.h
+   4318 phases.h
+   4324 <built-in>
+   436f printf
+   4376 __off_t
+   437e _IO_read_ptr
+   438b _chain
+   4392 size_t
+   4399 _shortbuf
+   43a3 _IO_buf_base
+   43b0 long long unsigned int
+   43c7 read_line
+   43d1 long long int
+   43df phase_defused
+   43ed _fileno
+   43f5 _IO_read_end
+   4402 _flags
+   4409 _IO_buf_end
+   4415 _cur_column
+   4421 _old_offset
+   442d infile
+   4434 initialize_bomb
+   4444 _IO_marker
+   444f stdin
+   4455 _IO_write_ptr
+   4463 _sbuf
+   4469 short unsigned int
+   447c _IO_save_base
+   448a _lock
+   4490 _flags2
+   4498 _mode
+   449e __builtin_puts
+   44ad stdout
+   44b4 sizetype
+   44bd _IO_write_end
+   44cb GNU C11 5.3.1 20160406 (Red Hat 5.3.1-6) -mtune=generic -march=x86-64 -ggdb -O
+   451a _IO_lock_t
+   4525 _IO_FILE
+   452e fopen
+   4534 _pos
+   4539 _markers
+   4542 unsigned char
+   4550 short int
+   455a _vtable_offset
+   4569 exit
+   456e bomb.c
+   4575 input
+   457b _next
+   4581 __off64_t
+   458b _IO_read_base
+   4599 _IO_save_end
+   45a6 __pad1
+   45ad __pad2
+   45b4 __pad3
+   45bb __pad4
+   45c2 __pad5
+   45c9 _unused2
+   45d2 argv
+   45d7 phase_1
+   45df phase_2
+   45e7 phase_3
+   45ef phase_4
+   45f7 phase_5
+   45ff phase_6
+   4607 _IO_backup_base
+   4617 /cse/courses/cse351/17au/Lab2/lab2GenGrade/generator/src
+   4650 argc
+   4655 main
+   465a _IO_write_base
+   479a .symtab
+   47a2 .strtab
+   47aa .shstrtab
+   47b4 .interp
+   47bc .note.ABI-tag
+   47ca .note.gnu.build-id
+   47dd .gnu.hash
+   47e7 .dynsym
+   47ef .dynstr
+   47f7 .gnu.version
+   4804 .gnu.version_r
+   4813 .rela.dyn
+   481d .rela.plt
+   4827 .init
+   482d .text
+   4833 .fini
+   4839 .rodata
+   4841 .eh_frame_hdr
+   484f .eh_frame
+   4859 .init_array
+   4865 .fini_array
+   4871 .jcr
+   4876 .dynamic
+   487f .got
+   4884 .got.plt
+   488d .data
+   4893 .bss
+   4898 .comment
+   48a1 .debug_aranges
+   48b0 .debug_info
+   48bc .debug_abbrev
+   48ca .debug_line
+   48d6 .debug_str
+   48e1 .debug_loc
+   5749 crtstuff.c
+   5754 __JCR_LIST__
+   5761 deregister_tm_clones
+   5776 register_tm_clones
+   5789 __do_global_dtors_aux
+   579f completed.6904
+   57ae __do_global_dtors_aux_fini_array_entry
+   57d5 frame_dummy
+   57e1 __frame_dummy_init_array_entry
+   5800 bomb.c
+   5807 phases.c
+   5810 array.3268
+   581b support.c
+   5825 sig_handler
+   5831 __FRAME_END__
+   583f __JCR_END__
+   584b __init_array_end
+   585c _DYNAMIC
+   5865 __init_array_start
+   5878 _GLOBAL_OFFSET_TABLE_
+   588e __libc_csu_fini
+   589e skip
+   58a3 getenv@@GLIBC_2.2.5
+   58b7 phase_defused
+   58c9 _ITM_deregisterTMCloneTable
+   58e5 stdout@@GLIBC_2.2.5
+   58f9 data_start
+   5904 input_strings
+   5912 strcpy@@GLIBC_2.2.5
+   592a puts@@GLIBC_2.2.5
+   593c stdin@@GLIBC_2.2.5
+   594f _edata
+   5956 fclose@@GLIBC_2.2.5
+   597a _fini
+   5980 system@@GLIBC_2.2.5
+   5994 num_input_strings
+   59a6 printf@@GLIBC_2.2.5
+   59ba phase_5
+   59c2 rewind@@GLIBC_2.2.5
+   59d6 blank_line
+   59e1 dup@@GLIBC_2.2.5
+   59f2 phase_3
+   59fa phase_1
+   5a02 invalid_phase
+   5a10 close@@GLIBC_2.2.5
+   5a23 lab_id
+   5a2a fputc@@GLIBC_2.2.5
+   5a3d node3
+   5a43 __libc_start_main@@GLIBC_2.2.5
+   5a62 fgets@@GLIBC_2.2.5
+   5a75 explode_bomb
+   5a82 node1
+   5a88 __data_start
+   5a95 tmpfile@@GLIBC_2.2.5
+   5aaa signal@@GLIBC_2.2.5
+   5abe gethostbyname@@GLIBC_2.2.5
+   5ad9 node5
+   5adf fprintf@@GLIBC_2.2.5
+   5af4 __gmon_start__
+   5b03 strtol@@GLIBC_2.2.5
+   5b17 fun7
+   5b1c __dso_handle
+   5b29 _IO_stdin_used
+   5b3c host_table
+   5b47 func4
+   5b50 string_length
+   5b5e __libc_csu_init
+   5b6e fflush@@GLIBC_2.2.5
+   5b82 __isoc99_sscanf@@GLIBC_2.7
+   5ba5 _end
+   5baa _start
+   5bb1 secret_phase
+   5bbe infile
+   5bc5 __bss_start
+   5bd1 main
+   5bd6 bcopy@@GLIBC_2.2.5
+   5bf5 read_line
+   5c03 strings_not_equal
+   5c15 phase_4
+   5c1d cuserid@@GLIBC_2.2.5
+   5c32 fopen@@GLIBC_2.2.5
+   5c45 phase_6
+   5c4d scratch
+   5c55 _Jv_RegisterClasses
+   5c69 send_msg
+   5c72 phase_2
+   5c7a open_clientfd
+   5c88 sprintf@@GLIBC_2.2.5
+   5c9d exit@@GLIBC_2.2.5
+   5caf bomb_id
+   5cb7 connect@@GLIBC_2.2.5
+   5ccc fwrite@@GLIBC_2.2.5
+   5ce0 __TMC_END__
+   5cec _ITM_registerTMCloneTable
+   5d06 node2
+   5d0c node4
+   5d12 sleep@@GLIBC_2.2.5
+   5d25 node6
+   5d2b _init
+   5d31 read_six_numbers
+   5d46 initialize_bomb
+   5d56 __ctype_b_loc@@GLIBC_2.3
+   5d6f socket@@GLIBC_2.2.5
