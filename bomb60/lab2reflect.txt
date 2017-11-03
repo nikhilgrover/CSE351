@@ -1,17 +1,18 @@
 ********************
 * Lab 2 Reflection *
 ********************
-Name: 
-ID:   
+Name: Nikhil Grover
+ID: 1435083  
 
 
 -----------------------------------------------------------
-1) Address:  
+1) Address: 0x7fffffffd97c  
 -----------------------------------------------------------
-2) Relative addr:  
+2) Relative addr: 0, the second fillArray is called starting
+ at the address of value  
 -----------------------------------------------------------
-3) Instruction:  
+3) Instruction: mov $2, %rax 
 -----------------------------------------------------------
-4) Lowest addr:  
-   Highest addr: 
+4) Lowest addr: 0x4007b5  
+   Highest addr: 0x4007d6
 -----------------------------------------------------------
