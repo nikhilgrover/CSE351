@@ -1,0 +1,20 @@
+********************
+* Lab 3 Reflection *
+********************
+Name: Nikhil Grover 
+ID: 1435083  
+
+
+-----------------------------------------------------------
+1) Address: 0x400846  
+-----------------------------------------------------------
+2) Explain: The seg fault is a core dump, meaning that we tried to get access to memory that we were not allowed to. The process of filling the array caused %rip to get overwritten, causing a seg fault.   
+
+
+
+-----------------------------------------------------------
+3) Explain: I do not agree. If for some reason there is not enough space to allocate for an array at runtime, a segfault will occur, even though the array is created on the Heap.   
+
+
+
+-----------------------------------------------------------
