@@ -2,7 +2,7 @@
  * Nikhil Grover
  * 1435083
  *
- * trans.c - Natrix transpose B = A^T
+ * trans.c - Matrix transpose B = A^T
  *
  * Each transpose function must have a prototype of the form:
  * void trans(int M, int N, int A[M][N], int B[N][M]);
@@ -78,22 +78,18 @@ void transpose_submit(int M, int N, int A[M][N], int B[N][M])
     }
   }
 
+  
   // 67x61 case
-  if(M == 61 && N == 67) {
-    block_size = 16;
-    for(block_row = 0; block_row < M; block_row += 16) {
-      for(block_column = 0; block_column < N; block_column += 4) {
-	for(i = block_row; (i < block_row + 16) && (i < N); i++) {
-	  for(j = block_column; (j < block_column + 4) && (j < M); j++) {
-	    if((i - block_row) == (j - block_column)) {
-	      temp = A[i][j];
+  if(M == 67 && N == 61) {
+    block_size = 14;
+    for(block_row = 0; block_row < M; block_row += block_size) {
+      for(block_column = 0; block_column < N; block_column += block_size) {
+	for(i = block_row; (i < block_row + block_size) && (i < M); ++i) {
+	  for(j = block_column; (j < block_column + block_size) && (j < N); ++j) {
+	    if(i > 66 || j > 60) {
+	      continue;
 	    } else {
-	      B[j][i] = A[i][j];
-	    }
-	  }
-	  for(j = block_column; (j < block_column + 4) && (j < M); j++) {
-	    if((i - block_row) == (j - block_column)) {
-	      B[i][j] = temp;
+	      A[i][j] = B[j][i];
 	    }
 	  }
 	}
@@ -138,7 +134,6 @@ void registerFunctions()
 
     /* Register any additional transpose functions */
     registerTransFunction(trans, trans_desc); 
-
 }
 
 /* 
