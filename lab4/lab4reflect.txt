@@ -1,29 +1,35 @@
 ********************
 * Lab 4 Reflection *
 ********************
-Name: 
-ID:   
+Name: Nikhil Grover 
+ID: 1435083  
 
 
 -----------------------------------------------------------
-1) Ratio:  ##:##
+1) Ratio:  20:1
 -----------------------------------------------------------
-2) Reason:  
-
+2) Reason: One reason is recalculation of values rather than  
+loading them from memory.
 -----------------------------------------------------------
 3) "Faster" code
    
-   Method 1:  
-   Example 1: 
+   Method 1: Cache-blocking code  
+   Example 1: See loop semantics in trans.c 
    
-   Method 2:  
-   Example 2: 
+   Method 2: Time complexity analysis/optimization  
+   Example 2: Using merge sort instead of bubble sort because
+   merge sort has an average time complexity of O(n log n)
+   whereas bubble sort runs on an average of O(n^2). 
 
 -----------------------------------------------------------
 4) Execution time
 
-   Pro:  
+   Pro: It's in the name, your program can potentially run faster.  
    
-   Con:  
+   Con: Space complexity is often ignored when it shouldn't be. 
+   Sometimes, an algorithm with low execution time can be extremely
+   inefficient from a space perspective, because the reality of computing 
+   is that programs can only run as fast as the hardware they are built on 
+   allow them to, so thinking about space complexity is equally important.  
    
 -----------------------------------------------------------

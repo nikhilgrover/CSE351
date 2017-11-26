@@ -84,8 +84,10 @@ void transpose_submit(int M, int N, int A[M][N], int B[N][M])
     block_size = 14;
     for(block_row = 0; block_row < M; block_row += block_size) {
       for(block_column = 0; block_column < N; block_column += block_size) {
-	for(i = block_row; (i < block_row + block_size) && (i < M); ++i) {
-	  for(j = block_column; (j < block_column + block_size) && (j < N); ++j) {
+	for(i = block_row; (i < block_row + block_size) && (i < M); i++) {
+	  for(j = block_column; (j < block_column + block_size) && (j < N); j++) {
+	    // Due to the nature of a 67x61 matrix, the last row/column do not need
+	    // to be moved during the transpose.
 	    if(i > 66 || j > 60) {
 	      continue;
 	    } else {
